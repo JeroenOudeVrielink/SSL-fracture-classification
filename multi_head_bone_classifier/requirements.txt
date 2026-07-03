@@ -1,0 +1,14 @@
+torch 
+torchvision 
+torchaudio
+lightning
+torchmetrics
+tqdm
+pandas
+numpy
+pillow
+wandb
+tabulate
+matplotlib
+scikit-learn
+seaborn

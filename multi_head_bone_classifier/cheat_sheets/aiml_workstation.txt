@@ -1,0 +1,17 @@
+login
+ssh jvrielink@129.127.9.231
+
+copy repo
+rsync -r multi-head-bone-classifier/ jvrielink@129.127.9.231:multi-head-bone-classifier/
+
+copy current repo
+rsync -r . jvrielink@129.127.9.231:multi-head-bone-classifier/
+
+copy files from remote 
+rsync jvrielink@129.127.9.231:PATH LOCAL_PATH
+
+rsync jvrielink@129.127.9.231:AIML_half_size/test.pkl .
+
+rsync -r jvrielink@129.127.9.231:multi-head-bone-classifier/results/ .
+
+rsync -r annotations jvrielink@129.127.9.231:AIML_half_size

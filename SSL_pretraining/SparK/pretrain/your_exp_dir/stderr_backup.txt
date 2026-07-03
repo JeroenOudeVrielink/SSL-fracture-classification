@@ -1,0 +1,45 @@
+wandb: Currently logged in as: jeroenov98. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.16.1
+wandb: Run data is saved locally in /home/jvrielink/SparK/pretrain/your_exp_dir/wandb/run-20240105_142755-irk65lwf
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run debug_01-05_14:27:54
+wandb:  View project at https://wandb.ai/jeroenov98/AIML-SSL
+wandb:  View run at https://wandb.ai/jeroenov98/AIML-SSL/runs/irk65lwf
+[01-05 12:05:58] (b/python3.8/traceback.py, line 105)=> Traceback (most recent call last):
+[01-05 12:05:58] (b/python3.8/traceback.py, line 105)=>   File "main.py", line 305, in <module>
+    main_pt()
+[01-05 12:05:58] (b/python3.8/traceback.py, line 105)=>   File "main.py", line 155, in main_pt
+    stats = pre_train_one_ep(
+[01-05 12:05:58] (b/python3.8/traceback.py, line 105)=>   File "main.py", line 252, in pre_train_one_ep
+    loss = model(inp, active_b1ff=None, vis=False)
+[01-05 12:05:58] (b/python3.8/traceback.py, line 105)=>   File "/home/jvrielink/anaconda3/envs/spark/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1120, in _call_impl
+    result = forward_call(*input, **kwargs)
+[01-05 12:05:58] (b/python3.8/traceback.py, line 105)=>   File "main.py", line 38, in forward
+    return self.module(*args, **kwargs)
+[01-05 12:05:58] (b/python3.8/traceback.py, line 105)=>   File "/home/jvrielink/anaconda3/envs/spark/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+[01-05 12:05:58] (b/python3.8/traceback.py, line 105)=>   File "/home/jvrielink/SparK/pretrain/spark.py", line 96, in forward
+    fea_bcffs: List[torch.Tensor] = self.sparse_encoder(masked_bchw)
+[01-05 12:05:58] (b/python3.8/traceback.py, line 105)=>   File "/home/jvrielink/anaconda3/envs/spark/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+[01-05 12:05:58] (b/python3.8/traceback.py, line 105)=>   File "/home/jvrielink/SparK/pretrain/encoder.py", line 208, in forward
+    return self.sp_cnn(x, hierarchical=True)
+[01-05 12:05:58] (b/python3.8/traceback.py, line 105)=>   File "/home/jvrielink/anaconda3/envs/spark/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+[01-05 12:05:58] (b/python3.8/traceback.py, line 105)=>   File "/home/jvrielink/SparK/pretrain/models/resnet.py", line 36, in forward
+    x = self.layer1(x); ls.append(x)
+[01-05 12:05:58] (b/python3.8/traceback.py, line 105)=>   File "/home/jvrielink/anaconda3/envs/spark/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+[01-05 12:05:58] (b/python3.8/traceback.py, line 105)=>   File "/home/jvrielink/anaconda3/envs/spark/lib/python3.8/site-packages/torch/nn/modules/container.py", line 141, in forward
+    input = module(input)
+[01-05 12:05:58] (b/python3.8/traceback.py, line 105)=>   File "/home/jvrielink/anaconda3/envs/spark/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+[01-05 12:05:58] (b/python3.8/traceback.py, line 105)=>   File "/home/jvrielink/anaconda3/envs/spark/lib/python3.8/site-packages/timm/models/resnet.py", line 403, in forward
+    x = self.conv1(x)
+[01-05 12:05:58] (b/python3.8/traceback.py, line 105)=>   File "/home/jvrielink/anaconda3/envs/spark/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+[01-05 12:05:58] (b/python3.8/traceback.py, line 105)=>   File "/home/jvrielink/SparK/pretrain/encoder.py", line 22, in sp_conv_forward
+    x *= _get_active_ex_or_ii(H=x.shape[2], W=x.shape[3], returning_active_ex=True)    # (BCHW) *= (B1HW), mask the output of conv
+[01-05 12:05:58] (b/python3.8/traceback.py, line 105)=>   File "/home/jvrielink/SparK/pretrain/encoder.py", line 16, in _get_active_ex_or_ii
+    active_ex = _cur_active.repeat_interleave(h_repeat, dim=2).repeat_interleave(w_repeat, dim=3)
+[01-05 12:05:58] (b/python3.8/traceback.py, line 105)=> KeyboardInterrupt

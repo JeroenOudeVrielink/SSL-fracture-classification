@@ -1,0 +1,1 @@
+ResNet 50 with two linear layers of sizes 512 and 256 with ReLU activation for both decoders. 

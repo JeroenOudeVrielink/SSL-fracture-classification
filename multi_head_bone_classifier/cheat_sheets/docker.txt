@@ -1,0 +1,19 @@
+
+List docker images
+docker images
+
+Build docker
+build -t <image_name> .
+The . is for current directory
+
+
+Remove all dockers that have status existed
+docker rm $(docker ps -a -q -f status=exited)
+
+Same effect
+docker container prune
+
+Remove image
+docker image rm [OPTIONS] IMAGE [IMAGE...]
+or 
+docker rmi <Image>

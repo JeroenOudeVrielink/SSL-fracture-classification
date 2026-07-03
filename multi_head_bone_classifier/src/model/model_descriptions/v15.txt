@@ -1,0 +1,1 @@
+ResNet 50 with one linear layer of size 128 for the body decoder and one linear layer of size 32 for the view decoder. Both have ReLU activation. This version has an added linear learning rate scheduler and has weighted loss. 

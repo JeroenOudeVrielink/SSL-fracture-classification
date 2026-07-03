@@ -1,0 +1,155 @@
+{
+    "os": "Linux-6.2.0-39-generic-x86_64-with-glibc2.17",
+    "python": "3.8.18",
+    "heartbeatAt": "2024-01-05T04:41:19.348020",
+    "startedAt": "2024-01-05T04:41:18.509319",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--exp_name=debug",
+        "--data_path=/media/jvrielink/9958194f-e772-4a20-b156-50f2ac51f106/spark_data",
+        "--model=resnet50",
+        "--bs=256",
+        "--base_lr=0.0032",
+        "--ep=400"
+    ],
+    "state": "running",
+    "program": "main.py",
+    "codePathLocal": "main.py",
+    "codePath": "pretrain/main.py",
+    "git": {
+        "remote": "git@github.com:JeroenOudeVrielink/SparK.git",
+        "commit": "098e2916ea19bbda308fcf660a54cf0a6490a81c"
+    },
+    "email": "jeroenov98@gmail.com",
+    "root": "/home/jvrielink/SparK",
+    "host": "zliao-workstation7",
+    "username": "jvrielink",
+    "executable": "/home/jvrielink/anaconda3/envs/spark/bin/python",
+    "cpu_count": 12,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 1764.1451000000002,
+        "min": 800.0,
+        "max": 4580.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1614.127,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 1458.591,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 801.071,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 799.034,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 1396.325,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 800.362,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 799.864,
+            "min": 800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3600.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 456.8854446411133,
+            "used": 357.32694244384766
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 15.400310516357422
+    }
+}
