@@ -1,6 +1,8 @@
 # Understanding Self-Supervised Pretraining Methods for Label-Scarce Ankle Fracture Classification
 
-This repository contains all code for the master thesis: Understanding Self-Supervised Pretraining Methods for Label-Scarce Ankle Fracture Classification. 
+This repository contains all code for the master thesis: Understanding Self-Supervised Pretraining Methods for Label-Scarce Ankle Fracture Classification.
+
+All code was previously not public as both the training data and downstream data cannot be published due to their medical nature. I am currently working on the repository to make it functional with a dummy dataset for demonstration purposes.  
 
 
 The directory "multi_head_bone_classifier" contains all the code for the LuXry indexing classifier. 
